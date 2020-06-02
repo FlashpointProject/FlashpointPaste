@@ -62,7 +62,7 @@ class LogData extends React.Component<LogDataProps, LogDataState> {
     // Render the log content as html or as plain text
     if (loading) {
       return (
-        <p>LOADING</p>
+        <h1>Loading Log...</h1>
       );
     }
     const logContent = isLogDataHTML ?

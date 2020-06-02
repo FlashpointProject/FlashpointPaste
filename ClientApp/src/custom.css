@@ -22,7 +22,8 @@ html, body, #root, .page {
   height: 100%;
 }
 .container {
-  height: 80%;
+  height: 85%;
+  width: 90%;
 }
 
 *:focus {
@@ -72,7 +73,7 @@ body {
 /* Log */
 .log {
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* Log-Page Content */
