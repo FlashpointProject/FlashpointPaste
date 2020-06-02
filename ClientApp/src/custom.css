@@ -1,0 +1,81 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+/* ------ General ------ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, .page {
+  height: 100%;
+}
+.container {
+  height: 80%;
+}
+
+*:focus {
+  outline: none;
+}
+*:visited {
+  color: inherit;
+}
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+:root {
+  /* Root font size (Scales most stuff) */
+  font-size: 1em;
+  font-weight: 100;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Measure elements by the outline of their border instead of by their content */
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+
+/* Simple Scroll(bar) */
+.simple-scroll {
+  --scrollbar-size: 0.85rem;
+}
+.simple-scroll::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+.simple-scroll::-webkit-scrollbar-corner {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+/* Log */
+.log {
+  height: 100%;
+  overflow: scroll;
+}
+
+/* Log-Page Content */
+.log-page__content {
+  flex: 1 1 auto;
+}
