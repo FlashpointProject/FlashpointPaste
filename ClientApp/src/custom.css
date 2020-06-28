@@ -1,7 +1,7 @@
 /* Provide sufficient contrast against white background */
-a {
+/* a {
   color: #0366d6;
-}
+} */
 
 code {
   color: #E01A76;
@@ -29,9 +29,9 @@ html, body, #root, .page {
 *:focus {
   outline: none;
 }
-*:visited {
+/* *:visited {
   color: inherit;
-}
+} */
 [draggable] {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -72,6 +72,7 @@ body {
 
 /* Log */
 .log {
+  font-size: 0.75em;
   height: 100%;
   overflow: auto;
 }
@@ -79,4 +80,46 @@ body {
 /* Log-Page Content */
 .log-page__content {
   flex: 1 1 auto;
+}
+
+.log-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.log-warnings {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-left: -0.5rem;
+}
+
+.log-warning__box {
+  display: inline-flex;
+  padding: 0.7rem;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.log-warning__box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.log-warning__box-text {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code {
+  display: contents;
 }

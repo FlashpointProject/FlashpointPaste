@@ -126,9 +126,9 @@ body {
   font-family: var(--layout__primary-font);
 }
 
-:link {
+/* :link {
   color: var(--layout__highlighted-text-color);
-}
+} */
 
 /* Simple Scroll(bar) */
 .simple-scroll::-webkit-scrollbar-track {
@@ -181,4 +181,23 @@ body {
 }
 .log__source--log-watcher {
   color: var(--layout__log-source-log-watcher);
+}
+
+.log-warning__box {
+  border-radius: 10px;
+  background-color: var(--layout__secondary-background);
+}
+
+.log-warning__box-icon {
+  font-weight: bold;
+  background-color: var(--layout__primary-outline-color);
+  border-radius: 5px;
+}
+
+.code {
+  color: var(--layout__curate-entry-collision-color);
+}
+
+.wikilink {
+  color: var(--layout__state-downloadable-hover);
 }
